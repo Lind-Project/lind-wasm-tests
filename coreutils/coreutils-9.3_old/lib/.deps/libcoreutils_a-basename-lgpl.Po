@@ -1,0 +1,45 @@
+lib/libcoreutils_a-basename-lgpl.o: lib/basename-lgpl.c lib/config.h \
+  /home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/lib/clang/16/include/stdbool.h \
+  lib/assert.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/assert.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/features.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/features-time64.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/wordsize.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/timesize.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/stdc-predef.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/sys/cdefs.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/long-double.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/gnu/stubs.h \
+  lib/basename-lgpl.h lib/stddef.h \
+  /home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/lib/clang/16/include/stddef.h \
+  /home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/lib/clang/16/include/__stddef_max_align_t.h \
+  lib/string.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/string.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/libc-header-start.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/types/locale_t.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/types/__locale_t.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/strings.h \
+  lib/filename.h
+lib/config.h:
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/lib/clang/16/include/stdbool.h:
+lib/assert.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/assert.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/features.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/features-time64.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/wordsize.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/timesize.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/stdc-predef.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/sys/cdefs.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/long-double.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/gnu/stubs.h:
+lib/basename-lgpl.h:
+lib/stddef.h:
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/lib/clang/16/include/stddef.h:
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/lib/clang/16/include/__stddef_max_align_t.h:
+lib/string.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/string.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/libc-header-start.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/types/locale_t.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/types/__locale_t.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/strings.h:
+lib/filename.h:

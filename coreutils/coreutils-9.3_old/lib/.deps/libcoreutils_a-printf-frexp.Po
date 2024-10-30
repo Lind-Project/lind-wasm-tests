@@ -1,0 +1,61 @@
+lib/libcoreutils_a-printf-frexp.o: lib/printf-frexp.c lib/config.h \
+  /home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/lib/clang/16/include/stdbool.h \
+  lib/assert.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/assert.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/features.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/features-time64.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/wordsize.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/timesize.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/stdc-predef.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/sys/cdefs.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/long-double.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/gnu/stubs.h \
+  lib/printf-frexp.h \
+  /home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/lib/clang/16/include/float.h \
+  lib/math.h /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/math.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/libc-header-start.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/types.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/typesizes.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/time64.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/math-vector.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/libm-simd-decl-stubs.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/floatn.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/floatn-common.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/flt-eval-method.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/fp-logb.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/fp-fast.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/mathcalls-helper-functions.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/mathcalls.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/mathcalls-narrow.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/iscanonical.h
+lib/config.h:
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/lib/clang/16/include/stdbool.h:
+lib/assert.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/assert.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/features.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/features-time64.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/wordsize.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/timesize.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/stdc-predef.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/sys/cdefs.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/long-double.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/gnu/stubs.h:
+lib/printf-frexp.h:
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/lib/clang/16/include/float.h:
+lib/math.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/math.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/libc-header-start.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/types.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/typesizes.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/time64.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/math-vector.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/libm-simd-decl-stubs.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/floatn.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/floatn-common.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/flt-eval-method.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/fp-logb.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/fp-fast.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/mathcalls-helper-functions.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/mathcalls.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/mathcalls-narrow.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/iscanonical.h:

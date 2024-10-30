@@ -1,0 +1,40 @@
+lib/libcoreutils_a-getopt1.o: lib/getopt1.c lib/config.h \
+  /home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/lib/clang/16/include/stdbool.h \
+  lib/assert.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/assert.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/features.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/features-time64.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/wordsize.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/timesize.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/stdc-predef.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/sys/cdefs.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/long-double.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/gnu/stubs.h \
+  lib/getopt.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/getopt.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/getopt_core.h \
+  /home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/getopt_ext.h \
+  lib/getopt-cdefs.h lib/getopt-pfx-core.h lib/getopt-core.h \
+  lib/getopt-pfx-ext.h lib/getopt-ext.h lib/getopt_int.h
+lib/config.h:
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/lib/clang/16/include/stdbool.h:
+lib/assert.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/assert.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/features.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/features-time64.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/wordsize.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/timesize.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/stdc-predef.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/sys/cdefs.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/long-double.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/gnu/stubs.h:
+lib/getopt.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/getopt.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/getopt_core.h:
+/home/lind-wasm/glibc/sysroot/include/wasm32-wasi/bits/getopt_ext.h:
+lib/getopt-cdefs.h:
+lib/getopt-pfx-core.h:
+lib/getopt-core.h:
+lib/getopt-pfx-ext.h:
+lib/getopt-ext.h:
+lib/getopt_int.h:

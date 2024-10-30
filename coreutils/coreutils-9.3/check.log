@@ -1,0 +1,2923 @@
+make  all-recursive
+make[1]: Entering directory '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3'
+Making all in po
+make[2]: Entering directory '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/po'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/po'
+Making all in .
+make[2]: Entering directory '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3'
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0  -I. -I./lib  -Ilib -I./lib -Isrc -I./src    -Wno-cast-qual -Wno-conversion -Wno-float-equal -Wno-sign-compare -Wno-undef -Wno-unused-function -Wno-unused-parameter -Wno-float-conversion -Wimplicit-fallthrough -Wno-pedantic -Wno-sign-conversion -Wno-type-limits --debug -MT lib/libcoreutils_a-fts.o -MD -MP -MF lib/.deps/libcoreutils_a-fts.Tpo -c -o lib/libcoreutils_a-fts.o `test -f 'lib/fts.c' || echo './'`lib/fts.c
+mv -f lib/.deps/libcoreutils_a-fts.Tpo lib/.deps/libcoreutils_a-fts.Po
+rm -f lib/libcoreutils.a
+llvm-ar crs lib/libcoreutils.a lib/libcoreutils_a-copy-acl.o lib/libcoreutils_a-set-acl.o lib/libcoreutils_a-acl-errno-valid.o lib/libcoreutils_a-acl-internal.o lib/libcoreutils_a-get-permissions.o lib/libcoreutils_a-set-permissions.o lib/libcoreutils_a-alignalloc.o lib/libcoreutils_a-allocator.o lib/libcoreutils_a-areadlink.o lib/libcoreutils_a-areadlink-with-size.o lib/libcoreutils_a-areadlinkat.o lib/libcoreutils_a-areadlinkat-with-size.o lib/libcoreutils_a-argmatch.o lib/libcoreutils_a-argv-iter.o lib/libcoreutils_a-openat-proc.o lib/libcoreutils_a-backupfile.o lib/libcoreutils_a-backup-rename.o lib/libcoreutils_a-backupfile.o lib/libcoreutils_a-backup-find.o lib/libcoreutils_a-base32.o lib/libcoreutils_a-base64.o lib/libcoreutils_a-basename-lgpl.o lib/libcoreutils_a-binary-io.o lib/libcoreutils_a-bitrotate.o lib/libcoreutils_a-btowc.o lib/libcoreutils_a-buffer-lcm.o lib/libcoreutils_a-c-ctype.o lib/libcoreutils_a-c-strcasecmp.o lib/libcoreutils_a-c-strncasecmp.o lib/libcoreutils_a-c-strtod.o lib/libcoreutils_a-c-strtold.o lib/libcoreutils_a-canon-host.o lib/libcoreutils_a-canonicalize.o lib/libcoreutils_a-careadlinkat.o lib/libcoreutils_a-chdir-long.o lib/libcoreutils_a-chmod.o lib/libcoreutils_a-chmodat.o lib/libcoreutils_a-chown.o  lib/libcoreutils_a-chownat.o lib/libcoreutils_a-cl-strtod.o lib/libcoreutils_a-cl-strtold.o lib/libcoreutils_a-cloexec.o  lib/libcoreutils_a-close-stream.o  lib/libcoreutils_a-closein.o lib/libcoreutils_a-closeout.o  lib/libcoreutils_a-count-leading-zeros.o lib/libcoreutils_a-af_alg.o lib/libcoreutils_a-md5-stream.o lib/libcoreutils_a-md5.o lib/libcoreutils_a-sha1-stream.o lib/libcoreutils_a-sha1.o lib/libcoreutils_a-sha256-stream.o lib/libcoreutils_a-sha256.o lib/libcoreutils_a-sha512-stream.o lib/libcoreutils_a-sha512.o lib/libcoreutils_a-sm3-stream.o lib/libcoreutils_a-sm3.o lib/libcoreutils_a-cycle-check.o lib/libcoreutils_a-di-set.o lib/libcoreutils_a-opendir-safer.o  lib/libcoreutils_a-dirname.o lib/libcoreutils_a-basename.o lib/libcoreutils_a-dirname-lgpl.o lib/libcoreutils_a-stripslash.o lib/libcoreutils_a-dtoastr.o lib/libcoreutils_a-dtotimespec.o     lib/libcoreutils_a-exclude.o lib/libcoreutils_a-exitfail.o  lib/libcoreutils_a-faccessat.o lib/libcoreutils_a-fadvise.o  lib/libcoreutils_a-fchmodat.o lib/libcoreutils_a-fchownat.o lib/libcoreutils_a-fclose.o lib/libcoreutils_a-fcntl.o lib/libcoreutils_a-creat-safer.o lib/libcoreutils_a-open-safer.o lib/libcoreutils_a-fd-hook.o lib/libcoreutils_a-fd-reopen.o lib/libcoreutils_a-fd-safer-flag.o lib/libcoreutils_a-dup-safer-flag.o   lib/libcoreutils_a-fdopendir.o lib/libcoreutils_a-fdutimensat.o lib/libcoreutils_a-fflush.o lib/libcoreutils_a-file-has-acl.o lib/libcoreutils_a-file-set.o lib/libcoreutils_a-file-type.o  lib/libcoreutils_a-filemode.o lib/libcoreutils_a-filenamecat.o lib/libcoreutils_a-filenamecat-lgpl.o lib/libcoreutils_a-filevercmp.o   lib/libcoreutils_a-fopen-safer.o  lib/libcoreutils_a-fprintftime.o lib/libcoreutils_a-fpurge.o lib/libcoreutils_a-freadahead.o lib/libcoreutils_a-freading.o lib/libcoreutils_a-freadptr.o lib/libcoreutils_a-freadseek.o   lib/libcoreutils_a-freopen-safer.o lib/libcoreutils_a-fseek.o lib/libcoreutils_a-fseeko.o lib/libcoreutils_a-fseterr.o  lib/libcoreutils_a-fstatat.o lib/libcoreutils_a-fsusage.o    lib/libcoreutils_a-ftoastr.o  lib/libcoreutils_a-fts.o lib/libcoreutils_a-full-read.o lib/libcoreutils_a-full-write.o    lib/libcoreutils_a-getcwd.o lib/libcoreutils_a-getcwd-lgpl.o   lib/libcoreutils_a-getgroups.o  lib/libcoreutils_a-gethrxtime.o lib/libcoreutils_a-xtime.o    lib/libcoreutils_a-getndelim2.o lib/libcoreutils_a-getopt.o lib/libcoreutils_a-getopt1.o  lib/libcoreutils_a-getprogname.o  lib/libcoreutils_a-gettime.o lib/libcoreutils_a-gettime-res.o  lib/libcoreutils_a-getugroups.o  lib/malloc/libcoreutils_a-dynarray_at_failure.o lib/malloc/libcoreutils_a-dynarray_emplace_enlarge.o lib/malloc/libcoreutils_a-dynarray_finalize.o lib/malloc/libcoreutils_a-dynarray_resize.o lib/malloc/libcoreutils_a-dynarray_resize_clear.o lib/malloc/libcoreutils_a-scratch_buffer_grow.o lib/malloc/libcoreutils_a-scratch_buffer_grow_preserve.o lib/malloc/libcoreutils_a-scratch_buffer_set_array_size.o  lib/libcoreutils_a-hard-locale.o lib/libcoreutils_a-hash.o lib/libcoreutils_a-hash-pjw.o lib/libcoreutils_a-hash-triple.o lib/libcoreutils_a-hash-triple-simple.o lib/libcoreutils_a-heap.o lib/libcoreutils_a-human.o lib/libcoreutils_a-i-ring.o lib/libcoreutils_a-ialloc.o   lib/libcoreutils_a-idcache.o  lib/libcoreutils_a-ino-map.o lib/libcoreutils_a-imaxtostr.o lib/libcoreutils_a-inttostr.o lib/libcoreutils_a-offtostr.o lib/libcoreutils_a-uinttostr.o lib/libcoreutils_a-umaxtostr.o lib/libcoreutils_a-isapipe.o       lib/libcoreutils_a-lchown.o lib/libcoreutils_a-ldtoastr.o lib/libcoreutils_a-mini-gmp-gnulib.o lib/libcoreutils_a-linebuffer.o lib/libcoreutils_a-link.o lib/libcoreutils_a-linkat.o lib/libcoreutils_a-localcharset.o  lib/glthread/libcoreutils_a-lock.o lib/libcoreutils_a-long-options.o  lib/libcoreutils_a-lstat.o lib/libcoreutils_a-malloca.o lib/libcoreutils_a-math.o lib/libcoreutils_a-mbchar.o lib/libcoreutils_a-mbiter.o lib/libcoreutils_a-mbrlen.o lib/libcoreutils_a-mbrtowc.o lib/libcoreutils_a-mbsalign.o lib/libcoreutils_a-mbscasecmp.o lib/libcoreutils_a-mbschr.o  lib/libcoreutils_a-mbslen.o lib/libcoreutils_a-mbsrtowcs.o lib/libcoreutils_a-mbsstr.o lib/libcoreutils_a-mbswidth.o  lib/libcoreutils_a-mbuiter.o lib/libcoreutils_a-memcasecmp.o lib/libcoreutils_a-memchr.o lib/libcoreutils_a-memchr2.o lib/libcoreutils_a-memcmp2.o lib/libcoreutils_a-memcoll.o   lib/libcoreutils_a-memset_explicit.o lib/libcoreutils_a-mgetgroups.o lib/libcoreutils_a-mkancesdirs.o lib/libcoreutils_a-mkdir.o lib/libcoreutils_a-dirchownmod.o lib/libcoreutils_a-mkdir-p.o  lib/libcoreutils_a-mkfifo.o lib/libcoreutils_a-mkfifoat.o lib/libcoreutils_a-mknodat.o lib/libcoreutils_a-mknod.o  lib/libcoreutils_a-mkstemp.o lib/libcoreutils_a-modechange.o lib/libcoreutils_a-mountlist.o lib/libcoreutils_a-mpsort.o   lib/libcoreutils_a-nanosleep.o   lib/libcoreutils_a-nproc.o lib/libcoreutils_a-nstrftime.o lib/libcoreutils_a-obstack.o  lib/libcoreutils_a-openat.o lib/libcoreutils_a-openat-die.o lib/libcoreutils_a-openat-safer.o  lib/libcoreutils_a-opendirat.o lib/libcoreutils_a-parse-datetime.o lib/libcoreutils_a-physmem.o  lib/libcoreutils_a-pipe2.o lib/libcoreutils_a-posix_memalign.o lib/libcoreutils_a-posixtm.o lib/libcoreutils_a-posixver.o lib/libcoreutils_a-printf-frexp.o lib/libcoreutils_a-printf-frexpl.o lib/libcoreutils_a-priv-set.o lib/libcoreutils_a-progname.o lib/libcoreutils_a-propername.o lib/libcoreutils_a-pselect.o      lib/libcoreutils_a-putenv.o lib/libcoreutils_a-qcopy-acl.o lib/libcoreutils_a-qset-acl.o lib/libcoreutils_a-quotearg.o  lib/libcoreutils_a-randint.o lib/libcoreutils_a-randperm.o lib/libcoreutils_a-randread.o lib/libcoreutils_a-rand-isaac.o   lib/libcoreutils_a-read-file.o  lib/libcoreutils_a-readlink.o lib/libcoreutils_a-readlinkat.o lib/libcoreutils_a-readtokens.o lib/libcoreutils_a-readtokens0.o lib/libcoreutils_a-readutmp.o  lib/libcoreutils_a-regex.o lib/libcoreutils_a-remove.o lib/libcoreutils_a-rename.o lib/libcoreutils_a-renameat.o lib/libcoreutils_a-renameatu.o  lib/libcoreutils_a-rmdir.o lib/libcoreutils_a-root-dev-ino.o  lib/libcoreutils_a-safe-read.o lib/libcoreutils_a-safe-write.o lib/libcoreutils_a-same.o lib/libcoreutils_a-save-cwd.o lib/libcoreutils_a-savedir.o lib/libcoreutils_a-savewd.o  lib/libcoreutils_a-select.o lib/libcoreutils_a-selinux-at.o  lib/libcoreutils_a-se-context.o lib/libcoreutils_a-se-label.o lib/libcoreutils_a-se-selinux.o lib/libcoreutils_a-setenv.o lib/libcoreutils_a-setlocale_null.o lib/libcoreutils_a-setlocale-lock.o lib/libcoreutils_a-settime.o lib/libcoreutils_a-sig2str.o  lib/libcoreutils_a-sig-handler.o lib/libcoreutils_a-signbitf.o lib/libcoreutils_a-signbitd.o lib/libcoreutils_a-signbitl.o  lib/libcoreutils_a-sockets.o lib/libcoreutils_a-stat.o lib/libcoreutils_a-stat-time.o   lib/libcoreutils_a-mkstemp-safer.o    lib/libcoreutils_a-strerror.o lib/libcoreutils_a-strerror-override.o lib/libcoreutils_a-striconv.o   lib/libcoreutils_a-strnlen1.o lib/libcoreutils_a-strintcmp.o lib/libcoreutils_a-strnumcmp.o     lib/libcoreutils_a-strtoll.o lib/libcoreutils_a-strtoull.o  lib/libcoreutils_a-symlink.o lib/libcoreutils_a-symlinkat.o lib/libcoreutils_a-sys_socket.o lib/libcoreutils_a-targetdir.o lib/libcoreutils_a-tempname.o lib/glthread/libcoreutils_a-threadlib.o   lib/libcoreutils_a-time_rz.o  lib/libcoreutils_a-timespec.o lib/glthread/libcoreutils_a-tls.o lib/libcoreutils_a-tmpdir.o  lib/libcoreutils_a-trim.o  lib/libcoreutils_a-u64.o  lib/libcoreutils_a-unicodeio.o lib/libcoreutils_a-unistd.o lib/libcoreutils_a-dup-safer.o lib/libcoreutils_a-fd-safer.o lib/libcoreutils_a-pipe-safer.o lib/unistr/libcoreutils_a-u8-mbtoucr.o lib/unistr/libcoreutils_a-u8-uctomb.o lib/unistr/libcoreutils_a-u8-uctomb-aux.o lib/uniwidth/libcoreutils_a-width.o lib/libcoreutils_a-unlink.o lib/libcoreutils_a-unlinkat.o lib/libcoreutils_a-unlinkdir.o lib/libcoreutils_a-unsetenv.o lib/libcoreutils_a-userspec.o lib/libcoreutils_a-utime.o lib/libcoreutils_a-utimecmp.o lib/libcoreutils_a-utimens.o lib/libcoreutils_a-utimensat.o lib/libcoreutils_a-verror.o lib/libcoreutils_a-version-etc.o lib/libcoreutils_a-version-etc-fsf.o  lib/libcoreutils_a-wcswidth.o lib/libcoreutils_a-wctype-h.o lib/libcoreutils_a-wcwidth.o             lib/libcoreutils_a-write-any-file.o lib/libcoreutils_a-xalignalloc.o lib/libcoreutils_a-xmalloc.o lib/libcoreutils_a-xalloc-die.o lib/libcoreutils_a-xbinary-io.o lib/libcoreutils_a-xdectoimax.o lib/libcoreutils_a-xdectoumax.o lib/libcoreutils_a-xfts.o lib/libcoreutils_a-xgetcwd.o lib/libcoreutils_a-xgetgroups.o lib/libcoreutils_a-xgethostname.o lib/libcoreutils_a-xmemcoll.o lib/libcoreutils_a-xnanosleep.o lib/libcoreutils_a-xprintf.o lib/libcoreutils_a-xreadlink.o lib/libcoreutils_a-xsize.o lib/libcoreutils_a-xstriconv.o lib/libcoreutils_a-xstrtod.o lib/libcoreutils_a-xstrtoimax.o lib/libcoreutils_a-xstrtol.o lib/libcoreutils_a-xstrtoul.o lib/libcoreutils_a-xstrtol-error.o lib/libcoreutils_a-xstrtold.o lib/libcoreutils_a-xstrtoumax.o lib/libcoreutils_a-xvasprintf.o lib/libcoreutils_a-xasprintf.o lib/libcoreutils_a-yesno.o lib/asnprintf.o lib/asprintf.o lib/at-func2.o lib/calloc.o lib/fnmatch.o lib/fopen.o lib/malloc.o lib/mbsrtowcs-state.o lib/printf-args.o lib/printf-parse.o lib/realloc.o lib/snprintf.o lib/strstr.o lib/vasnprintf.o lib/vasprintf.o lib/vfprintf.o lib/vprintf.o 
+echo lib/libcoreutils.a
+lib/libcoreutils.a
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/chroot src/chroot.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/timeout src/timeout.o src/operand2sig.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a -lpthread 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/nice src/nice.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/who src/who.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a  
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/users src/users.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/pinky src/pinky.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a  
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/uptime src/uptime.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a  
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/stty src/stty.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/df src/df.o src/find-mount-point.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/[ src/lbracket.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a  
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/b2sum src/b2sum-digest.o src/blake2/b2sum-blake2b-ref.o src/blake2/b2sum-b2sum.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/base64 src/base64-basenc.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/base32 src/base32-basenc.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/basenc src/basenc-basenc.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/basename src/basename.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/cat src/cat.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/chcon src/chcon.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a  
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/chgrp src/chgrp.o src/chown-core.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/chmod src/chmod.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/chown src/chown.o src/chown-core.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/cksum src/cksum-digest.o src/blake2/cksum-blake2b-ref.o src/blake2/cksum-b2sum.o src/cksum-sum.o src/cksum-cksum.o src/cksum-crctab.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a   
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/comm src/comm.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/cp src/cp.o src/copy.o src/cp-hash.o src/force-link.o src/selinux.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a      
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/csplit src/csplit.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/cut src/cut.o src/set-fields.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/date src/date.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a  
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/dd src/dd.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a   
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/dir src/ls.o src/ls-dir.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a      
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/dircolors src/dircolors.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/dirname src/dirname.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/du src/du.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/echo src/echo.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/env src/env.o src/operand2sig.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/expand src/expand.o src/expand-common.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/expr src/expr.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a  
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/factor src/factor.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a   
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/false src/false.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/fmt src/fmt.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/fold src/fold.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/ginstall src/install.o src/prog-fprintf.o src/copy.o src/cp-hash.o src/force-link.o src/selinux.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a        
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/groups src/groups.o src/group-list.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/head src/head.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/id src/id.o src/group-list.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a   
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/join src/join.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/kill src/kill.o src/operand2sig.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a  
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/link src/link.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/ln src/ln.o src/force-link.o src/relpath.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a  
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/logname src/logname.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/ls src/ls.o src/ls-ls.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a      
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/md5sum src/md5sum-digest.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a  
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/mkdir src/mkdir.o src/prog-fprintf.o src/selinux.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a   
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/mkfifo src/mkfifo.o src/selinux.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a   
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/mknod src/mknod.o src/selinux.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a   
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/mktemp src/mktemp.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a  
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/mv src/mv.o src/remove.o src/copy.o src/cp-hash.o src/force-link.o src/selinux.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a       
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/nl src/nl.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/nproc src/nproc.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/nohup src/nohup.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/numfmt src/numfmt.o src/set-fields.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/od src/od.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/paste src/paste.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/pathchk src/pathchk.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/pr src/pr.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a  
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/printenv src/printenv.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/printf src/printf.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a  
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/ptx src/ptx.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a  
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/pwd src/pwd.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/readlink src/readlink.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/realpath src/realpath.o src/relpath.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/rm src/rm.o src/remove.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a  
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/rmdir src/rmdir.o src/prog-fprintf.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/runcon src/runcon.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a  
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/seq src/seq.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/sha1sum src/sha1sum-digest.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a  
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/sha224sum src/sha224sum-digest.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a  
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/sha256sum src/sha256sum-digest.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a  
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/sha384sum src/sha384sum-digest.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a  
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/sha512sum src/sha512sum-digest.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a  
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/shred src/shred.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a  
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/shuf src/shuf.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/sleep src/sleep.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a  
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/sort src/sort.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a    -lpthread  
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/split src/split.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/stat src/stat.o src/find-mount-point.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a   
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/sum src/sum-sum.o src/sum-digest.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/sync src/sync.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a  
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/tac src/tac.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a  
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/tail src/tail.o src/iopoll.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a  
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/tee src/tee.o src/iopoll.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/test src/test.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a  
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/touch src/touch.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a  
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/tr src/tr.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/true src/true.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/truncate src/truncate.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/tsort src/tsort.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/tty src/tty.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/uname src/uname.o src/uname-uname.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a  
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/unexpand src/unexpand.o src/expand-common.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/uniq src/uniq.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/unlink src/unlink.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/vdir src/ls.o src/ls-vdir.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a      
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/wc src/wc.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a  
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/whoami src/whoami.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/yes src/yes.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/getlimits src/getlimits.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 
+name=`echo man/chroot.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/chroot.1-t							\
+  && t=man/chroot.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/chroot\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/chroot.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/chroot.1-t						\
+  && rm -f man/chroot.1 && mv man/chroot.1-t man/chroot.1
+name=`echo man/timeout.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/timeout.1-t							\
+  && t=man/timeout.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/timeout\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/timeout.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/timeout.1-t						\
+  && rm -f man/timeout.1 && mv man/timeout.1-t man/timeout.1
+name=`echo man/nice.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/nice.1-t							\
+  && t=man/nice.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/nice\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/nice.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/nice.1-t						\
+  && rm -f man/nice.1 && mv man/nice.1-t man/nice.1
+name=`echo man/who.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/who.1-t							\
+  && t=man/who.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/who\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/who.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/who.1-t						\
+  && rm -f man/who.1 && mv man/who.1-t man/who.1
+name=`echo man/users.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/users.1-t							\
+  && t=man/users.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/users\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/users.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/users.1-t						\
+  && rm -f man/users.1 && mv man/users.1-t man/users.1
+name=`echo man/pinky.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/pinky.1-t							\
+  && t=man/pinky.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/pinky\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/pinky.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/pinky.1-t						\
+  && rm -f man/pinky.1 && mv man/pinky.1-t man/pinky.1
+name=`echo man/uptime.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/uptime.1-t							\
+  && t=man/uptime.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/uptime\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/uptime.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/uptime.1-t						\
+  && rm -f man/uptime.1 && mv man/uptime.1-t man/uptime.1
+name=`echo man/stty.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/stty.1-t							\
+  && t=man/stty.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/stty\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/stty.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/stty.1-t						\
+  && rm -f man/stty.1 && mv man/stty.1-t man/stty.1
+name=`echo man/df.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/df.1-t							\
+  && t=man/df.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/df\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/df.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/df.1-t						\
+  && rm -f man/df.1 && mv man/df.1-t man/df.1
+name=`echo man/b2sum.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/b2sum.1-t							\
+  && t=man/b2sum.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/b2sum\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/b2sum.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/b2sum.1-t						\
+  && rm -f man/b2sum.1 && mv man/b2sum.1-t man/b2sum.1
+name=`echo man/base64.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/base64.1-t							\
+  && t=man/base64.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/base64\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/base64.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/base64.1-t						\
+  && rm -f man/base64.1 && mv man/base64.1-t man/base64.1
+name=`echo man/base32.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/base32.1-t							\
+  && t=man/base32.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/base32\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/base32.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/base32.1-t						\
+  && rm -f man/base32.1 && mv man/base32.1-t man/base32.1
+name=`echo man/basenc.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/basenc.1-t							\
+  && t=man/basenc.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/basenc\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/basenc.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/basenc.1-t						\
+  && rm -f man/basenc.1 && mv man/basenc.1-t man/basenc.1
+name=`echo man/basename.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/basename.1-t							\
+  && t=man/basename.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/basename\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/basename.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/basename.1-t						\
+  && rm -f man/basename.1 && mv man/basename.1-t man/basename.1
+name=`echo man/cat.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/cat.1-t							\
+  && t=man/cat.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/cat\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/cat.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/cat.1-t						\
+  && rm -f man/cat.1 && mv man/cat.1-t man/cat.1
+name=`echo man/chcon.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/chcon.1-t							\
+  && t=man/chcon.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/chcon\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/chcon.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/chcon.1-t						\
+  && rm -f man/chcon.1 && mv man/chcon.1-t man/chcon.1
+name=`echo man/chgrp.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/chgrp.1-t							\
+  && t=man/chgrp.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/chgrp\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/chgrp.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/chgrp.1-t						\
+  && rm -f man/chgrp.1 && mv man/chgrp.1-t man/chgrp.1
+name=`echo man/chmod.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/chmod.1-t							\
+  && t=man/chmod.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/chmod\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/chmod.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/chmod.1-t						\
+  && rm -f man/chmod.1 && mv man/chmod.1-t man/chmod.1
+name=`echo man/chown.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/chown.1-t							\
+  && t=man/chown.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/chown\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/chown.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/chown.1-t						\
+  && rm -f man/chown.1 && mv man/chown.1-t man/chown.1
+name=`echo man/cksum.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/cksum.1-t							\
+  && t=man/cksum.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/cksum\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/cksum.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/cksum.1-t						\
+  && rm -f man/cksum.1 && mv man/cksum.1-t man/cksum.1
+name=`echo man/comm.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/comm.1-t							\
+  && t=man/comm.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/comm\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/comm.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/comm.1-t						\
+  && rm -f man/comm.1 && mv man/comm.1-t man/comm.1
+name=`echo man/cp.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/cp.1-t							\
+  && t=man/cp.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/cp\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/cp.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/cp.1-t						\
+  && rm -f man/cp.1 && mv man/cp.1-t man/cp.1
+name=`echo man/csplit.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/csplit.1-t							\
+  && t=man/csplit.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/csplit\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/csplit.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/csplit.1-t						\
+  && rm -f man/csplit.1 && mv man/csplit.1-t man/csplit.1
+name=`echo man/cut.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/cut.1-t							\
+  && t=man/cut.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/cut\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/cut.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/cut.1-t						\
+  && rm -f man/cut.1 && mv man/cut.1-t man/cut.1
+name=`echo man/date.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/date.1-t							\
+  && t=man/date.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/date\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/date.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/date.1-t						\
+  && rm -f man/date.1 && mv man/date.1-t man/date.1
+name=`echo man/dd.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/dd.1-t							\
+  && t=man/dd.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/dd\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/dd.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/dd.1-t						\
+  && rm -f man/dd.1 && mv man/dd.1-t man/dd.1
+name=`echo man/dir.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/dir.1-t							\
+  && t=man/dir.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/dir\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/dir.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/dir.1-t						\
+  && rm -f man/dir.1 && mv man/dir.1-t man/dir.1
+name=`echo man/dircolors.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/dircolors.1-t							\
+  && t=man/dircolors.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/dircolors\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/dircolors.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/dircolors.1-t						\
+  && rm -f man/dircolors.1 && mv man/dircolors.1-t man/dircolors.1
+name=`echo man/dirname.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/dirname.1-t							\
+  && t=man/dirname.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/dirname\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/dirname.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/dirname.1-t						\
+  && rm -f man/dirname.1 && mv man/dirname.1-t man/dirname.1
+name=`echo man/du.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/du.1-t							\
+  && t=man/du.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/du\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/du.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/du.1-t						\
+  && rm -f man/du.1 && mv man/du.1-t man/du.1
+name=`echo man/echo.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/echo.1-t							\
+  && t=man/echo.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/echo\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/echo.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/echo.1-t						\
+  && rm -f man/echo.1 && mv man/echo.1-t man/echo.1
+name=`echo man/env.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/env.1-t							\
+  && t=man/env.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/env\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/env.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/env.1-t						\
+  && rm -f man/env.1 && mv man/env.1-t man/env.1
+name=`echo man/expand.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/expand.1-t							\
+  && t=man/expand.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/expand\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/expand.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/expand.1-t						\
+  && rm -f man/expand.1 && mv man/expand.1-t man/expand.1
+name=`echo man/expr.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/expr.1-t							\
+  && t=man/expr.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/expr\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/expr.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/expr.1-t						\
+  && rm -f man/expr.1 && mv man/expr.1-t man/expr.1
+name=`echo man/factor.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/factor.1-t							\
+  && t=man/factor.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/factor\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/factor.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/factor.1-t						\
+  && rm -f man/factor.1 && mv man/factor.1-t man/factor.1
+name=`echo man/false.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/false.1-t							\
+  && t=man/false.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/false\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/false.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/false.1-t						\
+  && rm -f man/false.1 && mv man/false.1-t man/false.1
+name=`echo man/fmt.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/fmt.1-t							\
+  && t=man/fmt.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/fmt\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/fmt.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/fmt.1-t						\
+  && rm -f man/fmt.1 && mv man/fmt.1-t man/fmt.1
+name=`echo man/fold.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/fold.1-t							\
+  && t=man/fold.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/fold\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/fold.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/fold.1-t						\
+  && rm -f man/fold.1 && mv man/fold.1-t man/fold.1
+name=`echo man/install.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/install.1-t							\
+  && t=man/install.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/install\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/install.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/install.1-t						\
+  && rm -f man/install.1 && mv man/install.1-t man/install.1
+name=`echo man/groups.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/groups.1-t							\
+  && t=man/groups.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/groups\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/groups.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/groups.1-t						\
+  && rm -f man/groups.1 && mv man/groups.1-t man/groups.1
+name=`echo man/head.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/head.1-t							\
+  && t=man/head.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/head\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/head.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/head.1-t						\
+  && rm -f man/head.1 && mv man/head.1-t man/head.1
+name=`echo man/id.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/id.1-t							\
+  && t=man/id.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/id\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/id.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/id.1-t						\
+  && rm -f man/id.1 && mv man/id.1-t man/id.1
+name=`echo man/join.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/join.1-t							\
+  && t=man/join.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/join\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/join.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/join.1-t						\
+  && rm -f man/join.1 && mv man/join.1-t man/join.1
+name=`echo man/kill.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/kill.1-t							\
+  && t=man/kill.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/kill\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/kill.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/kill.1-t						\
+  && rm -f man/kill.1 && mv man/kill.1-t man/kill.1
+name=`echo man/link.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/link.1-t							\
+  && t=man/link.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/link\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/link.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/link.1-t						\
+  && rm -f man/link.1 && mv man/link.1-t man/link.1
+name=`echo man/ln.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/ln.1-t							\
+  && t=man/ln.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/ln\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/ln.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/ln.1-t						\
+  && rm -f man/ln.1 && mv man/ln.1-t man/ln.1
+name=`echo man/logname.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/logname.1-t							\
+  && t=man/logname.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/logname\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/logname.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/logname.1-t						\
+  && rm -f man/logname.1 && mv man/logname.1-t man/logname.1
+name=`echo man/ls.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/ls.1-t							\
+  && t=man/ls.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/ls\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/ls.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/ls.1-t						\
+  && rm -f man/ls.1 && mv man/ls.1-t man/ls.1
+name=`echo man/md5sum.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/md5sum.1-t							\
+  && t=man/md5sum.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/md5sum\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/md5sum.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/md5sum.1-t						\
+  && rm -f man/md5sum.1 && mv man/md5sum.1-t man/md5sum.1
+name=`echo man/mkdir.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/mkdir.1-t							\
+  && t=man/mkdir.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/mkdir\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/mkdir.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/mkdir.1-t						\
+  && rm -f man/mkdir.1 && mv man/mkdir.1-t man/mkdir.1
+name=`echo man/mkfifo.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/mkfifo.1-t							\
+  && t=man/mkfifo.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/mkfifo\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/mkfifo.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/mkfifo.1-t						\
+  && rm -f man/mkfifo.1 && mv man/mkfifo.1-t man/mkfifo.1
+name=`echo man/mknod.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/mknod.1-t							\
+  && t=man/mknod.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/mknod\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/mknod.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/mknod.1-t						\
+  && rm -f man/mknod.1 && mv man/mknod.1-t man/mknod.1
+name=`echo man/mktemp.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/mktemp.1-t							\
+  && t=man/mktemp.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/mktemp\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/mktemp.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/mktemp.1-t						\
+  && rm -f man/mktemp.1 && mv man/mktemp.1-t man/mktemp.1
+name=`echo man/mv.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/mv.1-t							\
+  && t=man/mv.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/mv\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/mv.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/mv.1-t						\
+  && rm -f man/mv.1 && mv man/mv.1-t man/mv.1
+name=`echo man/nl.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/nl.1-t							\
+  && t=man/nl.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/nl\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/nl.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/nl.1-t						\
+  && rm -f man/nl.1 && mv man/nl.1-t man/nl.1
+name=`echo man/nproc.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/nproc.1-t							\
+  && t=man/nproc.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/nproc\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/nproc.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/nproc.1-t						\
+  && rm -f man/nproc.1 && mv man/nproc.1-t man/nproc.1
+name=`echo man/nohup.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/nohup.1-t							\
+  && t=man/nohup.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/nohup\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/nohup.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/nohup.1-t						\
+  && rm -f man/nohup.1 && mv man/nohup.1-t man/nohup.1
+name=`echo man/numfmt.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/numfmt.1-t							\
+  && t=man/numfmt.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/numfmt\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/numfmt.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/numfmt.1-t						\
+  && rm -f man/numfmt.1 && mv man/numfmt.1-t man/numfmt.1
+name=`echo man/od.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/od.1-t							\
+  && t=man/od.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/od\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/od.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/od.1-t						\
+  && rm -f man/od.1 && mv man/od.1-t man/od.1
+name=`echo man/paste.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/paste.1-t							\
+  && t=man/paste.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/paste\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/paste.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/paste.1-t						\
+  && rm -f man/paste.1 && mv man/paste.1-t man/paste.1
+name=`echo man/pathchk.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/pathchk.1-t							\
+  && t=man/pathchk.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/pathchk\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/pathchk.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/pathchk.1-t						\
+  && rm -f man/pathchk.1 && mv man/pathchk.1-t man/pathchk.1
+name=`echo man/pr.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/pr.1-t							\
+  && t=man/pr.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/pr\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/pr.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/pr.1-t						\
+  && rm -f man/pr.1 && mv man/pr.1-t man/pr.1
+name=`echo man/printenv.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/printenv.1-t							\
+  && t=man/printenv.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/printenv\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/printenv.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/printenv.1-t						\
+  && rm -f man/printenv.1 && mv man/printenv.1-t man/printenv.1
+name=`echo man/printf.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/printf.1-t							\
+  && t=man/printf.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/printf\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/printf.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/printf.1-t						\
+  && rm -f man/printf.1 && mv man/printf.1-t man/printf.1
+name=`echo man/ptx.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/ptx.1-t							\
+  && t=man/ptx.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/ptx\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/ptx.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/ptx.1-t						\
+  && rm -f man/ptx.1 && mv man/ptx.1-t man/ptx.1
+name=`echo man/pwd.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/pwd.1-t							\
+  && t=man/pwd.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/pwd\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/pwd.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/pwd.1-t						\
+  && rm -f man/pwd.1 && mv man/pwd.1-t man/pwd.1
+name=`echo man/readlink.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/readlink.1-t							\
+  && t=man/readlink.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/readlink\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/readlink.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/readlink.1-t						\
+  && rm -f man/readlink.1 && mv man/readlink.1-t man/readlink.1
+name=`echo man/realpath.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/realpath.1-t							\
+  && t=man/realpath.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/realpath\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/realpath.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/realpath.1-t						\
+  && rm -f man/realpath.1 && mv man/realpath.1-t man/realpath.1
+name=`echo man/rm.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/rm.1-t							\
+  && t=man/rm.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/rm\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/rm.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/rm.1-t						\
+  && rm -f man/rm.1 && mv man/rm.1-t man/rm.1
+name=`echo man/rmdir.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/rmdir.1-t							\
+  && t=man/rmdir.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/rmdir\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/rmdir.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/rmdir.1-t						\
+  && rm -f man/rmdir.1 && mv man/rmdir.1-t man/rmdir.1
+name=`echo man/runcon.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/runcon.1-t							\
+  && t=man/runcon.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/runcon\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/runcon.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/runcon.1-t						\
+  && rm -f man/runcon.1 && mv man/runcon.1-t man/runcon.1
+name=`echo man/seq.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/seq.1-t							\
+  && t=man/seq.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/seq\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/seq.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/seq.1-t						\
+  && rm -f man/seq.1 && mv man/seq.1-t man/seq.1
+name=`echo man/sha1sum.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/sha1sum.1-t							\
+  && t=man/sha1sum.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/sha1sum\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/sha1sum.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/sha1sum.1-t						\
+  && rm -f man/sha1sum.1 && mv man/sha1sum.1-t man/sha1sum.1
+name=`echo man/sha224sum.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/sha224sum.1-t							\
+  && t=man/sha224sum.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/sha224sum\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/sha224sum.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/sha224sum.1-t						\
+  && rm -f man/sha224sum.1 && mv man/sha224sum.1-t man/sha224sum.1
+name=`echo man/sha256sum.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/sha256sum.1-t							\
+  && t=man/sha256sum.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/sha256sum\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/sha256sum.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/sha256sum.1-t						\
+  && rm -f man/sha256sum.1 && mv man/sha256sum.1-t man/sha256sum.1
+name=`echo man/sha384sum.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/sha384sum.1-t							\
+  && t=man/sha384sum.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/sha384sum\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/sha384sum.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/sha384sum.1-t						\
+  && rm -f man/sha384sum.1 && mv man/sha384sum.1-t man/sha384sum.1
+name=`echo man/sha512sum.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/sha512sum.1-t							\
+  && t=man/sha512sum.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/sha512sum\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/sha512sum.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/sha512sum.1-t						\
+  && rm -f man/sha512sum.1 && mv man/sha512sum.1-t man/sha512sum.1
+name=`echo man/shred.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/shred.1-t							\
+  && t=man/shred.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/shred\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/shred.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/shred.1-t						\
+  && rm -f man/shred.1 && mv man/shred.1-t man/shred.1
+name=`echo man/shuf.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/shuf.1-t							\
+  && t=man/shuf.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/shuf\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/shuf.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/shuf.1-t						\
+  && rm -f man/shuf.1 && mv man/shuf.1-t man/shuf.1
+name=`echo man/sleep.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/sleep.1-t							\
+  && t=man/sleep.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/sleep\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/sleep.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/sleep.1-t						\
+  && rm -f man/sleep.1 && mv man/sleep.1-t man/sleep.1
+name=`echo man/sort.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/sort.1-t							\
+  && t=man/sort.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/sort\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/sort.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/sort.1-t						\
+  && rm -f man/sort.1 && mv man/sort.1-t man/sort.1
+name=`echo man/split.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/split.1-t							\
+  && t=man/split.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/split\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/split.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/split.1-t						\
+  && rm -f man/split.1 && mv man/split.1-t man/split.1
+name=`echo man/stat.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/stat.1-t							\
+  && t=man/stat.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/stat\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/stat.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/stat.1-t						\
+  && rm -f man/stat.1 && mv man/stat.1-t man/stat.1
+name=`echo man/sum.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/sum.1-t							\
+  && t=man/sum.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/sum\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/sum.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/sum.1-t						\
+  && rm -f man/sum.1 && mv man/sum.1-t man/sum.1
+name=`echo man/sync.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/sync.1-t							\
+  && t=man/sync.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/sync\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/sync.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/sync.1-t						\
+  && rm -f man/sync.1 && mv man/sync.1-t man/sync.1
+name=`echo man/tac.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/tac.1-t							\
+  && t=man/tac.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/tac\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/tac.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/tac.1-t						\
+  && rm -f man/tac.1 && mv man/tac.1-t man/tac.1
+name=`echo man/tail.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/tail.1-t							\
+  && t=man/tail.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/tail\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/tail.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/tail.1-t						\
+  && rm -f man/tail.1 && mv man/tail.1-t man/tail.1
+name=`echo man/tee.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/tee.1-t							\
+  && t=man/tee.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/tee\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/tee.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/tee.1-t						\
+  && rm -f man/tee.1 && mv man/tee.1-t man/tee.1
+name=`echo man/test.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/test.1-t							\
+  && t=man/test.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/test\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/test.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/test.1-t						\
+  && rm -f man/test.1 && mv man/test.1-t man/test.1
+name=`echo man/touch.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/touch.1-t							\
+  && t=man/touch.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/touch\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/touch.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/touch.1-t						\
+  && rm -f man/touch.1 && mv man/touch.1-t man/touch.1
+name=`echo man/tr.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/tr.1-t							\
+  && t=man/tr.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/tr\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/tr.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/tr.1-t						\
+  && rm -f man/tr.1 && mv man/tr.1-t man/tr.1
+name=`echo man/true.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/true.1-t							\
+  && t=man/true.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/true\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/true.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/true.1-t						\
+  && rm -f man/true.1 && mv man/true.1-t man/true.1
+name=`echo man/truncate.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/truncate.1-t							\
+  && t=man/truncate.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/truncate\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/truncate.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/truncate.1-t						\
+  && rm -f man/truncate.1 && mv man/truncate.1-t man/truncate.1
+name=`echo man/tsort.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/tsort.1-t							\
+  && t=man/tsort.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/tsort\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/tsort.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/tsort.1-t						\
+  && rm -f man/tsort.1 && mv man/tsort.1-t man/tsort.1
+name=`echo man/tty.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/tty.1-t							\
+  && t=man/tty.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/tty\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/tty.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/tty.1-t						\
+  && rm -f man/tty.1 && mv man/tty.1-t man/tty.1
+name=`echo man/uname.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/uname.1-t							\
+  && t=man/uname.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/uname\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/uname.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/uname.1-t						\
+  && rm -f man/uname.1 && mv man/uname.1-t man/uname.1
+name=`echo man/unexpand.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/unexpand.1-t							\
+  && t=man/unexpand.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/unexpand\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/unexpand.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/unexpand.1-t						\
+  && rm -f man/unexpand.1 && mv man/unexpand.1-t man/unexpand.1
+name=`echo man/uniq.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/uniq.1-t							\
+  && t=man/uniq.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/uniq\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/uniq.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/uniq.1-t						\
+  && rm -f man/uniq.1 && mv man/uniq.1-t man/uniq.1
+name=`echo man/unlink.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/unlink.1-t							\
+  && t=man/unlink.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/unlink\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/unlink.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/unlink.1-t						\
+  && rm -f man/unlink.1 && mv man/unlink.1-t man/unlink.1
+name=`echo man/vdir.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/vdir.1-t							\
+  && t=man/vdir.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/vdir\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/vdir.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/vdir.1-t						\
+  && rm -f man/vdir.1 && mv man/vdir.1-t man/vdir.1
+name=`echo man/wc.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/wc.1-t							\
+  && t=man/wc.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/wc\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/wc.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/wc.1-t						\
+  && rm -f man/wc.1 && mv man/wc.1-t man/wc.1
+name=`echo man/whoami.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/whoami.1-t							\
+  && t=man/whoami.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/whoami\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/whoami.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/whoami.1-t						\
+  && rm -f man/whoami.1 && mv man/whoami.1-t man/whoami.1
+name=`echo man/yes.1 | sed 's|.*/||; s|\.1$||'` || exit 1;	\
+case $name in							\
+  install) prog='ginstall'; argv=$name;;			\
+     test) prog='['; argv='[';;					\
+	*) prog=$name; argv=$prog;;				\
+esac;								\
+rm -f man/yes.1-t							\
+  && t=man/yes.td							\
+  && rm -rf $t							\
+  && /usr/bin/mkdir -p $t						\
+  && (cd $t && ln -s '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/src/'$prog \
+			$argv)			\
+&& : ${SOURCE_DATE_EPOCH=`cat ./.timestamp 2>/dev/null || :`} \
+&& : ${TZ=UTC0} && export TZ					\
+&& export SOURCE_DATE_EPOCH && /bin/bash ./man/dummy-man			\
+	     --source='GNU coreutils 9.3'			\
+	     --include=./man/$name.x			\
+	     --output=$t/$name.1				\
+	     --info-page='\(aq(coreutils) '$name' invocation\(aq' \
+	     $t/$argv				\
+  && sed \
+       -e 's|man/yes\.td/||g' \
+       -e '/For complete documentation/d' \
+       $t/$name.1 > man/yes.1-t			\
+  && rm -rf $t							\
+  && chmod a-w man/yes.1-t						\
+  && rm -f man/yes.1 && mv man/yes.1-t man/yes.1
+make[2]: Leaving directory '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3'
+Making all in gnulib-tests
+make[2]: Entering directory '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/gnulib-tests'
+## ---------------------------------------------------- ##
+## ------------------- Gnulib tests ------------------- ##
+## You can ignore compiler warnings in this directory.  ##
+## ---------------------------------------------------- ##
+make  all-recursive
+make[3]: Entering directory '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/gnulib-tests'
+Making all in .
+make[4]: Entering directory '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/gnulib-tests'
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o bench-md5 bench-md5.o libtests.a ../lib/libcoreutils.a libtests.a ../lib/libcoreutils.a libtests.a   
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o bench-sha1 bench-sha1.o libtests.a ../lib/libcoreutils.a libtests.a ../lib/libcoreutils.a libtests.a   
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o bench-sha224 bench-sha224.o libtests.a ../lib/libcoreutils.a libtests.a ../lib/libcoreutils.a libtests.a   
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o bench-sha256 bench-sha256.o libtests.a ../lib/libcoreutils.a libtests.a ../lib/libcoreutils.a libtests.a   
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o bench-sha384 bench-sha384.o libtests.a ../lib/libcoreutils.a libtests.a ../lib/libcoreutils.a libtests.a   
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o bench-sha512 bench-sha512.o libtests.a ../lib/libcoreutils.a libtests.a ../lib/libcoreutils.a libtests.a   
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o current-locale locale.o libtests.a ../lib/libcoreutils.a libtests.a ../lib/libcoreutils.a libtests.a  
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o test-localcharset test-localcharset.o libtests.a ../lib/libcoreutils.a libtests.a ../lib/libcoreutils.a libtests.a   
+make[4]: Leaving directory '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/gnulib-tests'
+make[3]: Leaving directory '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/gnulib-tests'
+make[2]: Leaving directory '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3/gnulib-tests'
+make[1]: Leaving directory '/home/lind-wasm/lind-wasm-tests/coreutils/coreutils-9.3'

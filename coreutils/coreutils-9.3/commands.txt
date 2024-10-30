@@ -1,0 +1,16 @@
+env FORCE_UNSAFE_CONFIGURE=1 ./configure --host=wasm32-unknown-wasi CC="/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0" gl_cv_func_working_mktime=yes gl_cv_func_working_error=yes ac_cv_func_statx=no ac_cv_func_renameat=no ac_cv_func_openat=no ac_cv_have_decl_fdopendir=no ac_cv_func_fdopendir=no --verbose > configure.log
+make AR="llvm-ar" ARFLAGS="crs" RANLIB="echo" CFLAGS="--debug" V=1 > check.log
+
+compile ls:
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0  -I. -I./lib  -Ilib -I./lib -Isrc -I./src    --debug -MT src/ls.o -MD -MP -MF $depbase.Tpo -c -o src/ls.o src/ls.c &&\
+mv -f $depbase.Tpo $depbase.Po
+
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0  -I. -I./lib  -Ilib -I./lib -Isrc -I./src    --debug -MT src/ls-dir.o -MD -MP -MF $depbase.Tpo -c -o src/ls-dir.o src/ls-dir.c &&\
+mv -f $depbase.Tpo $depbase.Po
+
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/ls src/ls.o src/ls-ls.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a
+
+compile du:
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0  -I. -I./lib  -Ilib -I./lib -Isrc -I./src    --debug -MT src/du.o -MD -MP -MF $depbase.Tpo -c -o src/du.o src/du.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0   --debug   -o src/du src/du.o src/libver.a lib/libcoreutils.a   lib/libcoreutils.a 

@@ -1,0 +1,28 @@
+# bash.pc.in
+
+prefix=/usr/local
+exec_prefix=${prefix}
+includedir=${prefix}/include
+libdir=${exec_prefix}/lib
+
+loadablesdir=${libdir}/bash
+headersdir=${includedir}/bash
+
+LOCAL_CFLAGS = 
+LOCAL_DEFS = -DSHELL
+CCFLAGS = ${LOCAL_DEFS} ${LOCAL_CFLAGS}
+
+CC = /home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0
+SHOBJ_CC = /home/clang+llvm-16.0.4-x86_64-linux-gnu-ubuntu-22.04/bin/clang-16 -pthread --target=wasm32-unknown-wasi --sysroot /home/lind-wasm/glibc/sysroot -Wl,--import-memory,--export-memory,--max-memory=67108864,--export=__stack_pointer -D _FILE_OFFSET_BITS=64 -D __USE_LARGEFILE64 -g -O0
+SHOBJ_CFLAGS = 
+SHOBJ_LD = 
+SHOBJ_LDFLAGS = 
+SHOBJ_XLDFLAGS = 
+SHOBJ_LIBS = 
+
+Name: bash
+Description: Bash headers for bash loadable builtins
+Version: 5.2-release
+Url: 
+Libs: ${SHOBJ_LIBS}
+Cflags: ${SHOBJ_CFLAGS} ${CCFLAGS} -I${headersdir} -I${headersdir}/builtins -I${headersdir}/include
